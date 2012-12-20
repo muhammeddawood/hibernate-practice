@@ -1,0 +1,13 @@
+apply plugin: "java"
+apply plugin: "maven"
+apply plugin: "eclipse"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile 'org.hibernate:hibernate-core:4.1.9.Final'
+	compile files('lib/ojdbc14.jar')
+	testCompile 'junit:junit:4.11'
+}
