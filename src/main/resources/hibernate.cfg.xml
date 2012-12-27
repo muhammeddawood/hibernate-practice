@@ -9,9 +9,14 @@
         <property name="hibernate.connection.username">hp</property>
         <property name="connection.password">hp</property>
         <property name="connection.pool_size">1</property>
-        <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
         <property name="show_sql">true</property>
         <property name="hbm2ddl.auto">create</property>
-        <mapping class="com.hp.dto.UserDetails"/>
+        <mapping class="com.hp.dto.UserDetails" />
+        <mapping class="com.hp.dto.Vehicle" />
+        <mapping class="com.hp.dto.Student" />
+        <mapping class="com.hp.dto.Teacher" />
+        <mapping class="com.hp.dto.TwoWheeler" />
+        <mapping class="com.hp.dto.FourWheeler" />
     </session-factory>
 </hibernate-configuration>
